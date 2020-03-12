@@ -1,14 +1,16 @@
-import React from 'react';
-
+import React from "react";
+import projects from "../../data/listOfProject";
+// import ProjectCard from "./ProjectCard";
+import { Link } from "react-router-dom";
 
 export default function Portfolio() {
-    return (
-        <ul>
-            <li>Youtube App</li>
-            <li>ToDo List</li>
-            <li>The Witcher Page</li>
-            <li>Anderson's Portfolio</li>
-            <li>Piskel Clone</li>
-        </ul>
-    )
+  return (
+    <ul>
+      {projects.map(project => {
+        return <li key={project.id}>
+            <Link to={`/project/${project.id}`}>{project.title}</Link>
+          </li>
+      })}
+    </ul>
+  );
 }
