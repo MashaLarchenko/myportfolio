@@ -12,7 +12,7 @@ import "./portfolio.css";
 export default function Portfolio() {
   const imgData = [faYoutube, faPenAlt, faListAlt, faEarlybirds, faWolfPackBattalion, faPaintRoller];
   return (
-    <>
+    <div className='project_wrapper'>
       <Navigation />
       <Container className="projects_conteiner" maxWidth="md">
         {projects.map(project => {
@@ -27,6 +27,6 @@ export default function Portfolio() {
           );
         })}
       </Container>
-    </>
+    </div>
   );
 }

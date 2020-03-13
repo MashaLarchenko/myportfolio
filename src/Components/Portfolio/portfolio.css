@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 250px);
-  height: 80vh;
+  /* height: 80vh; */
   align-items: center;
   grid-gap: 5%;
   grid-row-gap: 30px;
@@ -14,14 +14,16 @@
   height: 100%;
   padding-top: 5%;
   text-align: center;
-  border: 3px solid rgb(0, 0, 0);
+  background: #f6f2edb8;
+  
+  /* border: 3px solid rgb(0, 0, 0);
   border-radius: 4%;
   -webkit-box-shadow: 23px 7px 61px -18px rgba(0,0,0,0.75);
   -moz-box-shadow: 23px 7px 61px -18px rgba(0,0,0,0.75);
   box-shadow: 23px 7px 61px -18px rgba(0,0,0,0.75);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }
 
 .svg-inline--fa.fa-w-18,
@@ -32,11 +34,24 @@
   padding-top: 2%;
 }
 
+.svg-inline--fa.fa-w-18:hover,
+.svg-inline--fa.fa-w-16:hover,
+.svg-inline--fa.fa-w-15:hover {
+  animation-duration: 1s;
+  animation-name: rotateIcon;
+}
+
 .project_card {
   background: #ffffffeb;
   margin-top: 5vh;
   padding: 20px 0;
   border-radius: 10px;
+}
+
+.projectItem:hover {
+  animation-duration: 1s;
+  animation-name: appiarCard;
+  background-color: rgb(216, 215, 215);
 }
 
 .project_card p, .project_card div {
@@ -79,4 +94,41 @@
   justify-content: space-around;
   width: 50%;
   margin: 0 auto;
+}
+
+.project_wrapper {
+  background-image: url(../../assets/back1.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  height: 100vh;
+}
+
+@keyframes appiarCard {
+  0% {
+    background-color: #fff;
+    /* transform: rotateY(-180deg); */
+  }
+  100% {
+    background-color: rgb(216, 215, 215);
+    /* transform: rotate(90deg); */
+  }
+  /* 40% {
+    background-color: rgb(184, 183, 183);
+  }
+
+  60% {
+    background-color: rgb(116, 116, 116);
+  }
+
+  100% {
+    background-color: rgb(73, 73, 73);
+  } */
+}
+
+@keyframes rotateIcon {
+  0% {
+    transform: rotateY(-180deg);
+  }
 }
