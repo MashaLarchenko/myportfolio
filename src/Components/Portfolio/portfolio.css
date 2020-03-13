@@ -44,7 +44,8 @@
 }
 
 .project_img {
-  width: 80%;
+  width: 70%;
+  border-radius: 10px;
   margin: 0 auto;
   position: relative;
   display: block;
@@ -58,4 +59,24 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+}
+
+.linkBtn {
+  color: rgb(14, 86, 165);
+}
+
+.MuiButton-root.linkBtn {
+  background-color: rgb(14, 86, 165);
+  color: white;
+}
+
+.MuiButton-root.linkBtn:hover {
+  background-color: rgb(3, 33, 65);
+}
+
+.linkBtn_container {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
 }

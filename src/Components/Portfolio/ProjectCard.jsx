@@ -25,9 +25,9 @@ export default function ProjectCard() {
         <h3 style={{textAlign:'center', fontSize: '2rem'}}>{project.title}</h3>
         <img src={`${imgData[index]}`} alt="" className='project_img'/>
         <p>{project.description}</p>
-         <div>
-           <Button href={project.link}>View Site</Button>
-           <Button href={project.gitLink}>View code on GitHub</Button>
+         <div className='linkBtn_container'>
+           <Button href={project.link} className='linkBtn' variant="contained">View Site</Button>
+           <Button href={project.gitLink} className='linkBtn' variant="contained">View code on GitHub</Button>
          </div>
       </Container>
     </div>
