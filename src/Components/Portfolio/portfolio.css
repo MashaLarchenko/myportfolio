@@ -33,8 +33,14 @@
 }
 
 .project_card {
-  background: #ffffff78;
+  background: #ffffffeb;
+  margin-top: 5vh;
   padding: 20px 0;
+  border-radius: 10px;
+}
+
+.project_card p, .project_card div {
+  text-align: center;
 }
 
 .project_img {
