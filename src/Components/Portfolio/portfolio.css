@@ -1,21 +1,33 @@
 .projects_conteiner {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 250px);
-  /* height: 80vh; */
+  position: relative;
+  height: calc(100vh - 200px);
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: repeat(2, 45%);
   align-items: center;
-  grid-gap: 5%;
-  grid-row-gap: 30px;
-  margin-top: 40px;
+  justify-content: center;
+  align-content: center;
+  grid-gap: 30px;
+  margin-top: 30px;
+
+  /* height: calc(100vh - 200px); */
+  /* overflow: hidden; */
+  /* top: 4%; */
+  /* position: relative; */
+  /* padding: 20px; */
+  /* justify-content: center;
+    align-content: center; */
+  /* grid-row-gap: 30px; */
+  /* margin-top: 40px; */
 }
 
 .projectItem {
   width: 100%;
   height: 100%;
-  padding-top: 5%;
+  /* padding-top: 5%; */
   text-align: center;
   background: #f6f2edb8;
-  
+
   /* border: 3px solid rgb(0, 0, 0);
   border-radius: 4%;
   -webkit-box-shadow: 23px 7px 61px -18px rgba(0,0,0,0.75);
@@ -31,7 +43,7 @@
 .svg-inline--fa.fa-w-15 {
   width: 100%;
   height: 55%;
-  padding-top: 2%;
+  /* padding-top: 2%; */
 }
 
 .svg-inline--fa.fa-w-18:hover,
@@ -51,11 +63,26 @@
 .projectItem:hover {
   animation-duration: 1s;
   animation-name: appiarCard;
-  background-color: rgb(216, 215, 215);
+  background-color: rgb(231, 229, 229);
+  transform: scale(1.1);
 }
 
-.project_card p, .project_card div {
+.project_card p,
+.project_card div {
   text-align: center;
+}
+
+.project_card h3 {
+  margin: 20px;
+}
+
+.project_card p {
+  padding: 30px;
+  margin: 0;
+}
+
+.project_card div {
+  margin-bottom: 20px;
 }
 
 .project_img {
@@ -111,7 +138,7 @@
     /* transform: rotateY(-180deg); */
   }
   100% {
-    background-color: rgb(216, 215, 215);
+    background-color: rgb(231, 229, 229);
     /* transform: rotate(90deg); */
   }
   /* 40% {

@@ -9,13 +9,22 @@ a {
 
 .topNav {
   display: flex;
+  justify-content: space-evenly;
+  width: 60vw;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
   flex-direction: row;
-  justify-content: center;
 }
 
 .topNav a {
   color: white;
   padding: 10px;
+  font-size: 1.2rem
+}
+
+.topNav a:hover {
+  color: #0d61bc;
 }
 
 .nav_container {

@@ -2,6 +2,7 @@ import React from "react";
 import projects from "../../data/listOfProject";
 import Container from "@material-ui/core/Container";
 import Navigation from "../SkillsNavigation/Navigation";
+import Footer from '../SkillsNavigation/Footer';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faPenAlt, faPaintRoller } from '@fortawesome/free-solid-svg-icons';
@@ -27,6 +28,7 @@ export default function Portfolio() {
           );
         })}
       </Container>
+     <Footer/>
     </div>
   );
 }

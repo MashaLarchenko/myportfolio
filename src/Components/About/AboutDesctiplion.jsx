@@ -10,7 +10,7 @@ export default function AboutDescription() {
         <p className="description_text">
           I am a web developer with more than one year of experience. I
           constantly learning new technologies in web development. I want to
-          became an exelent Frontend Developer. I do my job well because I like
+          become an exellent Frontend Developer. I do my job well because I like
           what I do.
         </p>
       </Fade>

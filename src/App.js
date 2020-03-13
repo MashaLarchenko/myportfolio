@@ -3,7 +3,6 @@ import About from "./Components/About/About";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/Contact/Contact";
 import ProjectCard from './Components/Portfolio/ProjectCard';
-import Footer from './Components/SkillsNavigation/Footer';
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
@@ -16,7 +15,9 @@ function App() {
       <Route exact path="/portfolio" component={Portfolio} />
       <Route path="/contact" component={Contact} />
       <Route exact path="/portfolio/project/:id" component={ProjectCard} />
-      <Footer />
+      {/* <Route path="/resume" component={Resume} /> */}
+
+      {/* <Footer /> */}
     </Router>
   );
 }

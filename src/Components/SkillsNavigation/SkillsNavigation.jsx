@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 // import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
-// import Typography from '@material-ui/core/Typography';
+// import { Link } from '@material-ui/core/Link';
 import Container from "@material-ui/core/Container";
+import resume from "../../assets/Larchenko_Maria_CV.pdf";
+
 import "./header.css";
 
 export default function SkillsNavigation() {
@@ -15,9 +17,9 @@ export default function SkillsNavigation() {
       <Link to="/" className="nav" onClick={onTop}>
         <div>About</div>
       </Link>
-      <Link to="/skills" className="nav">
-        <div>Skills</div>
-      </Link>
+      <a href={resume} className="nav">
+        <div>Resume</div>
+      </a>
       <Link to="/portfolio" className="nav">
         <div>Portfolio</div>
       </Link>
