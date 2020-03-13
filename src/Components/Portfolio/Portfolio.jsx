@@ -7,13 +7,7 @@ import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faPenAlt, faPaintRoller } from '@fortawesome/free-solid-svg-icons';
 import { faYoutube, faEarlybirds, faWolfPackBattalion } from '@fortawesome/free-brands-svg-icons';
 import { faListAlt } from '@fortawesome/free-regular-svg-icons';
-
 import "./portfolio.css";
-// import youtube from "../../assets/youtube.jpg";
-// import todo from "../../assets/todo.png";
-// import witcher from "../../assets/witcher.jpg";
-// import piskel from "../../assets/piskel.jpg";
-// import bird from "../../assets/bird.jpg";
 
 export default function Portfolio() {
   const imgData = [faYoutube, faPenAlt, faListAlt, faEarlybirds, faWolfPackBattalion, faPaintRoller];
@@ -24,7 +18,7 @@ export default function Portfolio() {
         {projects.map(project => {
           const img = imgData[project.id - 1];
           return (
-            <Link to={`/project/${project.id}`} className="projectItem">
+            <Link to={`/portfolio/project/${project.id}`} className="projectItem">
               <div key={project.id} style={{padding: '10px 0', color: 'black'}}>
                 {project.title}
               </div>

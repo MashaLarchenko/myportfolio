@@ -12,9 +12,9 @@ function App() {
   return (
     <Router>
       <Route exact path="/" component={About} />
-      <Route path="/portfolio" component={Portfolio} />
+      <Route exact path="/portfolio" component={Portfolio} />
       <Route path="/contact" component={Contact} />
-      <Route path="/project/:id" component={ProjectCard} />
+      <Route exact path="/portfolio/project/:id" component={ProjectCard} />
       {/* <Navigation /> */}
     </Router>
   );

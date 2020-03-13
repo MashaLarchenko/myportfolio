@@ -1,18 +1,16 @@
-import youtube from '../assets/youtube.jpg';
+
 
 const projects = [
     {
         id: 1,
         title: 'Youtube App',
-        img: {youtube},
         description: 'The simple application where you can search video on Youtube and get the result in list of card',
-        link: '',
-        gitLink: '',
+        link: 'https://simple-youtube-app.netlify.com/',
+        gitLink: 'https://github.com/MashaLarchenko/youtube',
     },
     {
         id: 2,
         title: 'Piskel Clone App',
-        img: '',
         description: 'The simple application where you can search video on Youtube and get the result in list of card',
         link: '',
         gitLink: '',
@@ -20,7 +18,6 @@ const projects = [
     {
         id: 3,
         title: 'Todo list',
-        img: '',
         description: 'The simple application where you can search video on Youtube and get the result in list of card',
         link: '',
         gitLink: '',
@@ -28,7 +25,6 @@ const projects = [
     {
         id: 4,
         title: 'Song Bird quiz',
-        img: '',
         description: 'The simple application where you can search video on Youtube and get the result in list of card',
         link: '',
         gitLink: '',
@@ -36,7 +32,6 @@ const projects = [
     {
         id: 5,
         title: 'The Witcher',
-        img: '',
         description: 'The simple application where you can search video on Youtube and get the result in list of card',
         link: '',
         gitLink: '',
@@ -44,7 +39,6 @@ const projects = [
     {
         id: 6,
         title: 'Promo site(Markup Example)',
-        img: '',
         description: 'The simple application where you can search video on Youtube and get the result in list of card',
         link: '',
         gitLink: '',
