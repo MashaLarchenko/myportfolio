@@ -48,6 +48,14 @@ a {
   color: white;
 }
 
+.nav div {
+  font-size: 1.2rem;
+}
+
+.nav:hover {
+  background-color: #05478f;
+}
+
 .footer {
   position: absolute;
   bottom: 0;

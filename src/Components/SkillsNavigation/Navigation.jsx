@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import resume from "../../assets/Larchenko_Maria_CV.pdf";
+
 
 
 export default function Navigation() {
@@ -9,9 +11,9 @@ export default function Navigation() {
         <Link to="/">
           About
         </Link>
-        <Link to="/skills">
-          Skills
-        </Link>
+        <a href={resume}>
+          Resume
+        </a>
         <Link to="/portfolio">
           Portfolio
         </Link>

@@ -20,8 +20,7 @@ export default function Portfolio() {
           const img = imgData[project.id - 1];
           return (
             <Link to={`/portfolio/project/${project.id}`} key={project.id} className="projectItem">
-              <div className='hidden_div'/>
-              <div style={{padding: '10px 0', color: 'black'}}>
+              <div>
                 {project.title}
               </div>
               <FontAwesomeIcon icon={img} style={{color: 'rgb(14, 86, 165)'}}/>
