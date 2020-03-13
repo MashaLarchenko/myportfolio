@@ -7,7 +7,7 @@ import Navigation from "../SkillsNavigation/Navigation";
 import youtube from "../../assets/youtube.PNG";
 import promo from "../../assets/promo.PNG";
 import todo from "../../assets/todo.png";
-import witcher from "../../assets/witcher.PNG";
+import witcher from "../../assets/witcher-min.PNG";
 import piskel from "../../assets/piskel.PNG";
 import bird from "../../assets/bird.PNG";
 

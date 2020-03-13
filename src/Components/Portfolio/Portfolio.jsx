@@ -19,8 +19,9 @@ export default function Portfolio() {
         {projects.map(project => {
           const img = imgData[project.id - 1];
           return (
-            <Link to={`/portfolio/project/${project.id}`} className="projectItem">
-              <div key={project.id} style={{padding: '10px 0', color: 'black'}}>
+            <Link to={`/portfolio/project/${project.id}`} key={project.id} className="projectItem">
+              <div className='hidden_div'/>
+              <div style={{padding: '10px 0', color: 'black'}}>
                 {project.title}
               </div>
               <FontAwesomeIcon icon={img} style={{color: 'rgb(14, 86, 165)'}}/>
