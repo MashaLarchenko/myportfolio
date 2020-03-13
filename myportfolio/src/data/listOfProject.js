@@ -1,8 +1,10 @@
+import youtube from '../assets/youtube.jpg';
+
 const projects = [
     {
         id: 1,
         title: 'Youtube App',
-        img: '',
+        img: {youtube},
         description: 'The simple application where you can search video on Youtube and get the result in list of card',
         link: '',
         gitLink: '',
