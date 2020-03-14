@@ -26,16 +26,16 @@
   color: black;
 }
 
-.svg-inline--fa.fa-w-18,
-.svg-inline--fa.fa-w-16,
-.svg-inline--fa.fa-w-15 {
+.projectItem .svg-inline--fa.fa-w-18,
+.projectItem .svg-inline--fa.fa-w-16,
+.projectItem .svg-inline--fa.fa-w-15 {
   width: 100%;
   height: 55%;
 }
 
-.svg-inline--fa.fa-w-18:hover,
-.svg-inline--fa.fa-w-16:hover,
-.svg-inline--fa.fa-w-15:hover {
+.projectItem .svg-inline--fa.fa-w-18:hover,
+.projectItem .svg-inline--fa.fa-w-16:hover,
+.projectItem .svg-inline--fa.fa-w-15:hover {
   animation-duration: 1s;
   animation-name: rotateIcon;
 }
