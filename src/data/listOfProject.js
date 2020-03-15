@@ -38,7 +38,7 @@ const projects = [
     },
     {
         id: 6,
-        title: 'Promo site(Markup Example)',
+        title: 'Promo site',
         description: 'Not real site',
         link: 'https://mashalarchenko.github.io/NeutronMail/',
         gitLink: 'https://github.com/MashaLarchenko/NeutronMail',

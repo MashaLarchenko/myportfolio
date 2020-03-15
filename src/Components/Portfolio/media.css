@@ -1,3 +1,37 @@
+@media all and (width: 1024px) {
+  .projectItem .svg-inline--fa.fa-w-18,
+  .projectItem .svg-inline--fa.fa-w-16,
+  .projectItem .svg-inline--fa.fa-w-15 {
+    width: 85%;
+    height: 33%;
+  }
+
+  .projects_conteiner {
+    grid-template-rows: repeat(2, 35%);
+  }
+}
+@media all and (max-width: 800px) {
+  .projectItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .projectItem .svg-inline--fa.fa-w-18,
+  .projectItem .svg-inline--fa.fa-w-16,
+  .projectItem .svg-inline--fa.fa-w-15 {
+    width: 85%;
+    height: 36%;
+  }
+
+  /* .MuiContainer-root.projects_conteiner {
+    grid-template-columns: repeat(2, 40%);
+  } */
+}
+
 @media all and (max-width: 600px) {
   .linkBtn_container {
     width: 100%;
@@ -16,8 +50,24 @@
   }
 
   .projects_conteiner {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 45%);
     grid-template-rows: repeat(3, 30%);
     width: 90vw;
+    grid-gap: 20px;
+  }
+
+  .projectItem div {
+    font-size: 1rem;
+  }
+
+  .projectItem .svg-inline--fa.fa-w-18,
+  .projectItem .svg-inline--fa.fa-w-16,
+  .projectItem .svg-inline--fa.fa-w-15 {
+    width: 70%;
+    height: 36%;
+  }
+
+  .projectItem {
+    justify-content: center;
   }
 }
