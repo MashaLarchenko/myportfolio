@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import projects from "../../data/listOfProject";
 import Container from "@material-ui/core/Container";
+import Footer from '../SkillsNavigation/Footer';
 import Button from "@material-ui/core/Button";
 import Navigation from "../SkillsNavigation/Navigation";
 import youtube from "../../assets/youtube.PNG";
@@ -30,6 +31,7 @@ export default function ProjectCard() {
            <Button href={project.gitLink} className='linkBtn' variant="contained">View code on GitHub</Button>
          </div>
       </Container>
+      <Footer/>
     </div>
   );
 }

@@ -41,10 +41,18 @@
 }
 
 .project_card {
+  display: flex;
+  flex-direction: column;
   background: #ffffffeb;
-  margin-top: 5vh;
+  /* margin-top: 5vh; */
   padding: 20px 0;
   border-radius: 10px;
+  height: calc(100vh - 180px);
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  /* grid-gap: 30px; */
+  margin-top: 20px;
 }
 
 .projectItem:hover {
@@ -65,7 +73,8 @@
 }
 
 .project_card h3 {
-  margin: 20px;
+  margin: 0px;
+  padding-bottom: 10px;
 }
 
 .project_card p {
@@ -74,7 +83,7 @@
 }
 
 .project_card div {
-  margin-bottom: 20px;
+  /* margin-bottom: 10px; */
 }
 
 .project_img {
