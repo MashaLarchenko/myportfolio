@@ -1,16 +1,17 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import projects from "../../data/listOfProject";
 import Container from "@material-ui/core/Container";
 import Footer from '../SkillsNavigation/Footer';
 import Button from "@material-ui/core/Button";
 import Navigation from "../SkillsNavigation/Navigation";
-import youtube from "../../assets/youtube.PNG";
-import promo from "../../assets/promo.PNG";
-import todo from "../../assets/todo.png";
-import witcher from "../../assets/witcher-min.PNG";
-import piskel from "../../assets/piskel.PNG";
-import bird from "../../assets/bird.PNG";
+import youtube from "../../assets/youtube.jpeg";
+import promo from "../../assets/promo.jpeg";
+import todo from "../../assets/todo.jpeg";
+import witcher from "../../assets/witcher-min.jpeg";
+import piskel from "../../assets/piskel.jpeg";
+import bird from "../../assets/bird.jpeg";
 
 export default function ProjectCard() {
   const imgData = [youtube, piskel, todo, bird, witcher, promo];
@@ -24,7 +25,8 @@ export default function ProjectCard() {
       <Navigation />
       <Container className="project_card" maxWidth="md">
         <h3 style={{textAlign:'center', fontSize: '2rem'}}>{project.title}</h3>
-        <img src={`${imgData[index]}`} alt="" className='project_img'/>
+        <LazyLoadImage src={imgData[index]} alt="" className='project_img'/>
+        {/* <img src={`${imgData[index]}`} alt="" className='project_img'/> */}
         <p>{project.description}</p>
          <div className='linkBtn_container'>
            <Button href={project.link} className='linkBtn' variant="contained">View Site</Button>

@@ -1,38 +1,6 @@
-/* @media all and (max-width: 800px) {
-  .projectItem {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content: center;
-    align-items: center;
-    padding: 5px;
-  }
-
-  .projectItem .svg-inline--fa.fa-w-18,
-  .projectItem .svg-inline--fa.fa-w-16,
-  .projectItem .svg-inline--fa.fa-w-15 {
-    width: 85%;
-    height: 36%;
-  }
-
-  .MuiContainer-root.projects_conteiner {
-    grid-template-rows: repeat(2, 40%);
-  }
-} */
 
 @media all and (max-width: 600px) {
   .topNav a {
     font-size: 0.8rem;
   }
-
-  /* .projectItem {
-    justify-content: center;
-  }
-
-  .projectItem .svg-inline--fa.fa-w-18,
-  .projectItem .svg-inline--fa.fa-w-16,
-  .projectItem .svg-inline--fa.fa-w-15 {
-    width: 70%;
-    height: 36%;
-  } */
 }

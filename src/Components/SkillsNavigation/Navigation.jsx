@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import resume from "../../assets/Larchenko_Maria_CV.pdf";
 
-
-
 export default function Navigation() {
   return (
     <header className='header'>

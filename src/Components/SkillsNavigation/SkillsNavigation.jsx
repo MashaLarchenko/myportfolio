@@ -1,7 +1,5 @@
 import React from "react";
-// import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
-// import { Link } from '@material-ui/core/Link';
 import Container from "@material-ui/core/Container";
 import resume from "../../assets/Larchenko_Maria_CV.pdf";
 import "./header.css";
