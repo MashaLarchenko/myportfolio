@@ -9,7 +9,7 @@ import {
   faLinkedin,
   faGoogle
 } from "@fortawesome/free-brands-svg-icons";
-import photo from "../../assets/photo.png";
+import photo from "../../assets/photo.jpeg";
 import "./contact.css";
 
 export default function Contact() {

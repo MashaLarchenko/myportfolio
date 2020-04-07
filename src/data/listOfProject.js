@@ -42,6 +42,13 @@ const projects = [
         description: 'Not real site',
         link: 'https://mashalarchenko.github.io/NeutronMail/',
         gitLink: 'https://github.com/MashaLarchenko/NeutronMail',
+    },
+    {
+        id: 7,
+        title: 'Culture portal',
+        description: 'Site about film directors of Belarus',
+        link: 'https://directorsofbelarus.netlify.com/',
+        gitLink: 'https://github.com/MashaLarchenko/Culture_portal',
     }
 ]
 
