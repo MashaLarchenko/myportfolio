@@ -24,7 +24,6 @@
   height: 100%;
   text-align: center;
   background: #f6f2edb8;
-
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -56,18 +55,17 @@
 }
 
 .project_card {
+  flex: 1 0 auto;
+  margin: 1% auto;
   display: flex;
   flex-direction: column;
   background: #ffffffeb;
-  /* margin-top: 5vh; */
   padding: 20px 0;
-  border-radius: 10px;
+  border-radius: 3px;
   height: calc(100vh - 180px);
   align-items: center;
   justify-content: center;
   align-content: center;
-  /* grid-gap: 30px; */
-  margin-top: 20px;
 }
 
 .projectItem:hover {
@@ -112,7 +110,10 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
 }
 
 .linkBtn {
@@ -144,6 +145,19 @@
   height: 100%;
   overflow-y: scroll;
 }
+
+.view_more {
+  font-size: 1.2rem;
+  border: none;
+  width: 30%;
+  height: 40px;
+  text-align: center;
+  background-color: #0d61bc;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
 
 @keyframes appiarCard {
   0% {

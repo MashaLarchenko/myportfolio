@@ -5,10 +5,6 @@
     width: 85%;
     height: 33%;
   }
-
-  .projects_conteiner {
-    grid-template-rows: repeat(2, 35%);
-  }
 }
 @media all and (max-width: 800px) {
   .projectItem {
@@ -26,10 +22,6 @@
     width: 85%;
     height: 36%;
   }
-
-  /* .MuiContainer-root.projects_conteiner {
-    grid-template-columns: repeat(2, 40%);
-  } */
 }
 
 @media all and (max-width: 600px) {
@@ -51,7 +43,6 @@
 
   .projects_conteiner {
     grid-template-columns: repeat(2, 45%);
-    grid-template-rows: repeat(3, 30%);
     width: 90vw;
     grid-gap: 20px;
   }

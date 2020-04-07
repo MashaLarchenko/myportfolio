@@ -52,7 +52,7 @@ export default function Portfolio() {
             );
           })}
         </Container>
-        <button onClick={viewMore}> View more</button>
+        <button onClick={viewMore} className='view_more'> View more</button>
         <Footer />
       </div>
     </div>
