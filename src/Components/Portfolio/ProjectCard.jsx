@@ -23,16 +23,20 @@ export default function ProjectCard() {
   return (
     <div className='container'>
       <Navigation />
-      <Container className="project_card" maxWidth="md">
-        <h3 style={{textAlign:'center', fontSize: '2rem'}}>{project.title}</h3>
-        <LazyLoadImage src={imgData[index]} alt="" className='project_img'/>
-        <p>{project.description}</p>
-         <div className='linkBtn_container'>
-           <Button href={project.link} className='linkBtn' variant="contained">View Site</Button>
-           <Button href={project.gitLink} className='linkBtn' variant="contained">View code on GitHub</Button>
-         </div>
+      <Container className="project_card" maxWidth="lg">
+        <h3 style={{ textAlign: 'center', fontSize: '2rem' }}>{project.title}</h3>
+        <div className='project_info' style={{ backgroundImage: `url(${imgData[index]})` }}>
+          {/* <LazyLoadImage src={imgData[index]} alt="" className='project_img' /> */}
+          <p className='hover_info'>{project.description}</p>
+          <div className='linkBtn_container hover_info'>
+            <Button href={project.link} className='linkBtn' variant="contained">View Site</Button>
+            <Button href={project.gitLink} className='linkBtn' variant="contained">View code on GitHub</Button>
+          </div>
+        </div>
+
+
       </Container>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
