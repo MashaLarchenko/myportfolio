@@ -10,11 +10,11 @@ import youtube from "../../assets/youtube.jpeg";
 import promo from "../../assets/promo.jpeg";
 import todo from "../../assets/todo.jpeg";
 import witcher from "../../assets/witcher-min.jpeg";
-import piskel from "../../assets/piskel.jpeg";
+import astronomy from "../../assets/astronomy.PNG";
 import bird from "../../assets/bird.jpeg";
 
 export default function ProjectCard() {
-  const imgData = [youtube, piskel, todo, bird, witcher, promo];
+  const imgData = [youtube, astronomy, todo, bird, witcher, promo];
 
   const { id } = useParams();
   const index = projects.findIndex(project => project.id === +id);
@@ -26,7 +26,6 @@ export default function ProjectCard() {
       <Container className="project_card" maxWidth="md">
         <h3 style={{textAlign:'center', fontSize: '2rem'}}>{project.title}</h3>
         <LazyLoadImage src={imgData[index]} alt="" className='project_img'/>
-        {/* <img src={`${imgData[index]}`} alt="" className='project_img'/> */}
         <p>{project.description}</p>
          <div className='linkBtn_container'>
            <Button href={project.link} className='linkBtn' variant="contained">View Site</Button>

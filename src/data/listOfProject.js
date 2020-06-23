@@ -10,10 +10,10 @@ const projects = [
     },
     {
         id: 2,
-        title: 'Piskel Clone App',
-        description: 'The simple application where you can draw  and animate',
-        link: 'https://mashalarchenko.github.io/',
-        gitLink: '',
+        title: 'Astronomy picture of the day',
+        description: 'Web application where you can see the picture of the day from Nasa and also can choose day with calendar',
+        link: '    https://mashalarchenko.github.io/test_nasa_pic_app',
+        gitLink: 'https://github.com/MashaLarchenko/test_nasa_pic_app',
     },
     {
         id: 3,
@@ -49,7 +49,15 @@ const projects = [
         description: 'Site about film directors of Belarus',
         link: 'https://directorsofbelarus.netlify.com/',
         gitLink: 'https://github.com/MashaLarchenko/Culture_portal',
+    },
+    {
+        id: 8,
+        title: 'Culture portal',
+        description: 'Site about film directors of Belarus',
+        link: 'https://directorsofbelarus.netlify.com/',
+        gitLink: 'https://github.com/MashaLarchenko/Culture_portal',
     }
+
 ]
 
 export default projects; 
