@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import projects from "../../data/listOfProject";
 import Container from "@material-ui/core/Container";
 import Footer from '../SkillsNavigation/Footer';
@@ -26,15 +25,12 @@ export default function ProjectCard() {
       <Container className="project_card" maxWidth="lg">
         <h3 style={{ textAlign: 'center', fontSize: '2rem' }}>{project.title}</h3>
         <div className='project_info' style={{ backgroundImage: `url(${imgData[index]})` }}>
-          {/* <LazyLoadImage src={imgData[index]} alt="" className='project_img' /> */}
           <p className='hover_info'>{project.description}</p>
           <div className='linkBtn_container hover_info'>
             <Button href={project.link} className='linkBtn' variant="contained">View Site</Button>
             <Button href={project.gitLink} className='linkBtn' variant="contained">View code on GitHub</Button>
           </div>
         </div>
-
-
       </Container>
       <Footer />
     </div>
