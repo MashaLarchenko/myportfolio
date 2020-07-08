@@ -49,15 +49,7 @@ const projects = [
         description: 'Site about film directors of Belarus',
         link: 'https://directorsofbelarus.netlify.com/',
         gitLink: 'https://github.com/MashaLarchenko/Culture_portal',
-    },
-    {
-        id: 8,
-        title: 'Culture portal',
-        description: 'Site about film directors of Belarus',
-        link: 'https://directorsofbelarus.netlify.com/',
-        gitLink: 'https://github.com/MashaLarchenko/Culture_portal',
     }
-
 ]
 
 export default projects; 
